@@ -10,7 +10,7 @@ export function Sidebar() {
     <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8">
       <Input.Root>
         <Input.Prefix>
-          <Search className="h-5 w-5 text-zinc-500" />
+          <Search className="h-5 w-5 to-zinc-500" />
         </Input.Prefix>
         <Input.Control placeholder="Search" />
       </Input.Root>
