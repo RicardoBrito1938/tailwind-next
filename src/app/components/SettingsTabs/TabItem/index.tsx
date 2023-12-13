@@ -9,7 +9,7 @@ export interface TabItemProps {
   isSelected?: boolean
 }
 
-export function TabItem({ value, title, isSelected = false }: TabItemProps) {
+export const TabItem = ({ value, title, isSelected = false }: TabItemProps) => {
   return (
     <Tabs.Trigger
       value={value}

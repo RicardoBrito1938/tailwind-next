@@ -45,7 +45,7 @@ const tabs = [
   },
 ]
 
-export function SettingTabs() {
+export const SettingTabs = () => {
   const [selected, setSelected] = useState(tabs[0]?.value)
 
   return (

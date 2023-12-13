@@ -1,4 +1,4 @@
-export function UsedSpaceWidget() {
+export const UsedSpaceWidget = () => {
   return (
     <div className="py5 flex flex-col gap-4 rounded-lg bg-violet-50 px-4">
       <div className="space-y-1">

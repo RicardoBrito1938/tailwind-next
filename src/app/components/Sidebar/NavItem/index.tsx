@@ -6,7 +6,7 @@ export interface NavItemProps {
   icon: ElementType
 }
 
-export function NavItem({ title, icon: Icon }: NavItemProps) {
+export const NavItem = ({ title, icon: Icon }: NavItemProps) => {
   return (
     <a
       href=""

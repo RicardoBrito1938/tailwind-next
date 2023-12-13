@@ -5,7 +5,7 @@ import { UsedSpaceWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
 import * as Input from '../Input'
 
-export function Sidebar() {
+export const Sidebar = () => {
   return (
     <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8">
       <Input.Root>

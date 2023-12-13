@@ -1,8 +1,8 @@
 import { LogOut } from 'lucide-react'
 
-export function Profile() {
+export const Profile = () => {
   return (
-    <div className="grid-cols-profile grid items-center gap-3">
+    <div className="grid grid-cols-profile items-center gap-3">
       <img
         src="https://github.com/RicardoBrito1938.png"
         alt="Ricardo Brito"
