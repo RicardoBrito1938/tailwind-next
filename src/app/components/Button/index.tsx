@@ -13,6 +13,7 @@ const button = tv({
   variants: {
     variant: {
       primary: ' text-white hover:bg-violet-700 bg-violet-600',
+      ghost: 'rounded-md px-2 hover:bg-zinc-50 shadow-sm',
       outline: 'border border-zinc-300 text-zinc-700 hover:bg-zinc-50',
     },
     defaultVariants: {
@@ -30,8 +31,6 @@ export const Button = ({ variant, ...props }: ButtonProps) => {
       className={button({
         variant,
       })}
-    >
-      Save
-    </button>
+    />
   )
 }
