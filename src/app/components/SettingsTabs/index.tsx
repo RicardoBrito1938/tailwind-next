@@ -53,7 +53,7 @@ export const SettingTabs = () => {
     <Tabs.Root value={selected} onValueChange={setSelected}>
       <ScrollArea.Root className="w-full" type="scroll">
         <ScrollArea.Viewport className="w-full overflow-x-scroll">
-          <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200">
+          <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900">
             {tabs.map((tab) => (
               <TabItem
                 key={tab.value}

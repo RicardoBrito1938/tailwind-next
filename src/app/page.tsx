@@ -17,10 +17,10 @@ const Home = () => {
       <SettingTabs />
 
       <div className="mt-6 flex flex-col">
-        <div className="flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 lg:flex-row lg:items-center">
+        <div className="flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-800 dark:bg-zinc-900 lg:flex-row lg:items-center">
           <div className="space-y-1">
             <h2 className="text-lg font-medium text-zinc-900">Personal Info</h2>
-            <span className="text-sm text-zinc-500">
+            <span className="text-sm text-zinc-500 dark:text-zinc-400">
               Update your photo and personal details here
             </span>
           </div>
@@ -41,7 +41,7 @@ const Home = () => {
           <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form">
             <label
               htmlFor="firstName"
-              className="text-sm font-medium text-zinc-700"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-100"
             >
               Name
             </label>
@@ -53,7 +53,7 @@ const Home = () => {
               <div className="flex flex-col gap-3 lg:block">
                 <label
                   htmlFor="lastName"
-                  className="text-sm font-medium text-zinc-700 lg:sr-only"
+                  className="text-sm font-medium text-zinc-700 dark:text-zinc-100 lg:sr-only"
                 >
                   Last name
                 </label>
@@ -68,13 +68,13 @@ const Home = () => {
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="email"
-              className="text-sm font-medium text-zinc-700"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-100"
             >
               Email
             </label>
             <Input.Root>
               <Input.Prefix>
-                <Mail className="h-5 w-5 text-zinc-500" />
+                <Mail className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
               </Input.Prefix>
               <Input.Control
                 id="email"
@@ -87,10 +87,10 @@ const Home = () => {
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="photo"
-              className=" text-sm font-medium text-zinc-700"
+              className=" text-sm font-medium text-zinc-700 dark:text-zinc-100"
             >
               Your photo
-              <span className="mt-0.5 block text-sm font-normal text-zinc-500">
+              <span className="mt-0.5 block text-sm font-normal text-zinc-500 dark:text-zinc-400">
                 This will be displayed on your profile
               </span>
             </label>
@@ -102,7 +102,10 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
-            <label htmlFor="role" className="text-sm font-medium text-zinc-700">
+            <label
+              htmlFor="role"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-100"
+            >
               Role
             </label>
             <Input.Root>
@@ -113,7 +116,7 @@ const Home = () => {
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="country"
-              className="text-sm font-medium text-zinc-700"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-100"
             >
               Country
             </label>
@@ -126,7 +129,7 @@ const Home = () => {
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="timezone"
-              className="text-sm font-medium text-zinc-700"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-100"
             >
               Timezone
             </label>
@@ -137,9 +140,12 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
-            <label htmlFor="bio" className=" text-sm font-medium text-zinc-700">
+            <label
+              htmlFor="bio"
+              className=" text-sm font-medium text-zinc-700 dark:text-zinc-100"
+            >
               Bio
-              <span className="mt-0.5 block text-sm font-normal text-zinc-500">
+              <span className="mt-0.5 block text-sm font-normal text-zinc-500 dark:text-zinc-400">
                 Write a short introduction about yourself
               </span>
             </label>
@@ -155,23 +161,35 @@ const Home = () => {
 
                 <div className="flex items-center gap-1">
                   <Button type="button" variant="ghost">
-                    <Bold className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                    <Bold
+                      className="h-4 w-4 text-zinc-500 dark:text-zinc-400"
+                      strokeWidth={3}
+                    />
                   </Button>
                   <Button type="button" variant="ghost">
-                    <Italic className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                    <Italic
+                      className="h-4 w-4 text-zinc-500 dark:text-zinc-400"
+                      strokeWidth={3}
+                    />
                   </Button>
                   <Button type="button" variant="ghost">
-                    <Link className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                    <Link
+                      className="h-4 w-4 text-zinc-500 dark:text-zinc-400"
+                      strokeWidth={3}
+                    />
                   </Button>
                   <Button type="button" variant="ghost">
-                    <List className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                    <List
+                      className="h-4 w-4 text-zinc-500 dark:text-zinc-400"
+                      strokeWidth={3}
+                    />
                   </Button>
                   <button
                     type="button"
-                    className="ml-auto rounded-md p-2 hover:bg-zinc-50"
+                    className="ml-auto rounded-md p-2 hover:bg-zinc-50 dark:hover:bg-zinc-800"
                   >
                     <ListOrdered
-                      className="h-4 w-4 text-zinc-500"
+                      className="h-4 w-4 text-zinc-500 dark:text-zinc-400"
                       strokeWidth={3}
                     />
                   </button>
@@ -187,10 +205,10 @@ const Home = () => {
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="portfolio"
-              className=" text-sm font-medium text-zinc-700"
+              className=" text-sm font-medium text-zinc-700 dark:text-zinc-100"
             >
               Portfolio projects
-              <span className="mt-0.5 block text-sm font-normal text-zinc-500">
+              <span className="mt-0.5 block text-sm font-normal text-zinc-500 dark:text-zinc-400">
                 Share a few snippets of your work
               </span>
             </label>

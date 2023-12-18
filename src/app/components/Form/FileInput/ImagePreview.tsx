@@ -17,8 +17,8 @@ export const ImagePreview = () => {
 
   if (previewURL === null) {
     return (
-      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet-50">
-        <User className="h-8 w-8 text-violet-500" />
+      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet-50 dark:bg-zinc-800">
+        <User className="h-8 w-8 text-violet-50 dark:text-zinc-400" />
       </div>
     )
   }

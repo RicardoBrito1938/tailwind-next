@@ -18,7 +18,7 @@ export const Select = ({ children, placeholder, ...props }: Props) => {
           className="text-black"
         />
         <SelectPrimitive.Icon>
-          <ChevronDown className="h-5 w-5 text-zinc-500" />
+          <ChevronDown className="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
         </SelectPrimitive.Icon>
 
         <SelectPrimitive.Portal>
@@ -26,7 +26,7 @@ export const Select = ({ children, placeholder, ...props }: Props) => {
             sideOffset={8}
             side="bottom"
             position="popper"
-            className=" animate-slideDownAndFade z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm"
+            className=" z-10 w-[--radix-select-trigger-width] animate-slideDownAndFade overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
           >
             <SelectPrimitive.Viewport>{children}</SelectPrimitive.Viewport>
           </SelectPrimitive.Content>
