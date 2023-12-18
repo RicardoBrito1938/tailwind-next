@@ -8,15 +8,15 @@ export function Trigger() {
   return (
     <label
       htmlFor={id}
-      className="hover:bg-violet-25 group flex flex-1 cursor-pointer flex-col items-center gap-3 rounded-lg border border-zinc-300 px-6 py-4 text-center text-zinc-500 shadow-sm hover:border-violet-200 hover:text-violet-50 dark:text-zinc-400 dark:text-zinc-400"
+      className="hover:bg-violet-25 group flex flex-1 cursor-pointer flex-col items-center gap-3 rounded-lg border border-zinc-300 px-6 py-4 text-center text-zinc-500 shadow-sm hover:border-violet-200 hover:text-violet-50 dark:border-zinc-700 dark:hover:border-zinc-800 dark:hover:bg-zinc-800 dark:hover:text-violet-300"
     >
-      <div className="border-6 rounded-full border-zinc-50 bg-zinc-100 p-2 group-hover:border-violet-50 group-hover:bg-violet-100 dark:bg-zinc-600">
-        <UploadCloud className="h-5 w-5 text-zinc-600 group-hover:text-violet-600" />
+      <div className="border-6 rounded-full border-zinc-50 bg-zinc-100 p-2 group-hover:border-violet-50 group-hover:bg-violet-100 dark:border-zinc-700 dark:bg-zinc-800 dark:group-hover:border-zinc-600 dark:group-hover:bg-zinc-700">
+        <UploadCloud className="h-5 w-5 text-zinc-600 group-hover:text-violet-600 dark:text-zinc-500 dark:group-hover:text-violet-500" />
       </div>
 
       <div className="flex flex-col items-center gap-1">
         <span className="text-sm">
-          <span className="font-semibold text-violet-700 dark:text-zinc-100">
+          <span className="font-semibold text-violet-700 dark:text-violet-300">
             Click to upload
           </span>{' '}
           or drag and drop
